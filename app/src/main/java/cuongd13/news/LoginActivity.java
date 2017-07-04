@@ -35,6 +35,7 @@ public class LoginActivity extends Activity {
         Log.d("hello","helllo") ;
         Log.d("hello","branch02") ;
         Log.d("cuong" , "cuong");
+
         setContentView(R.layout.activity_login);
         listUser = new ArrayList<>();
 
