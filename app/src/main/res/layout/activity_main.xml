@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TabWidget>
+        <FrameLayout
+            android:layout_marginTop="70dp"
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:tag="Home"
+
+                android:orientation="vertical"
+                android:id="@+id/lstHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/lstViewHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:tag="Kinhte"
+                android:onClick="Kinhte"
+                android:id="@+id/lstKinte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/lstViewKinhte"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:tag="Chinhtri"
+                android:onClick="Chinhtri"
+                android:orientation="vertical"
+                android:id="@+id/lstChinhtri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/lstViewChinhtri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:tag="Xahoi"
+                android:onClick="Xahoi"
+                android:orientation="vertical"
+                android:id="@+id/lstXahoi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+
+                    android:id="@+id/lstViewXahoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </RelativeLayout>
+        </FrameLayout>
+
+    </TabHost>
+
+
+</LinearLayout>
